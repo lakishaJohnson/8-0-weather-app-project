@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./weather.css" />
+    <script defer src="weather.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Weather App</h1>
+      <form>
+        <label for="location">Pick a Location</label>
+        <input type="text" name="location" placeholder="What city??" required />
+        <input type="submit" value="Get Weather" />
+      </form>
+    </header>
+    <br />
+    <main>
+      <article class="display">
+        <div class="results">Choose a location to view the weather</div>
+      </article>
+      <aside class="history">
+        <h3>Previous Searches:</h3>
+        <p>no previous searches</p>
+        <ul></ul>
+      </aside>
+
+      <section class="forecast">
+        <article id="current">
+          
+        </article>
+        <article id="tomorrow">
+          
+        </article>
+        <article id="future">
+          
+        </article>
+      </section>
+
+    </main>
+  </body>
+</html>
