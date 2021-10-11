@@ -1,46 +1,54 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size:  12px;
-    /* margin: auto; */
-    
-} 
- h1 {
-    font-size: 32px;
-    color: white;
+    padding: 14px;
 }
 header {
     background-color: rgb(71, 167, 167);
-    padding: 40px;
-    border: 3px solid black;
-    text-align: center;
+    border: 3px solid rgb(22, 22, 22);
     width: 1000px;
     margin-right: auto;
     margin-left: auto;
-    
-}
-form {
+    padding: 40px;
     color: white;
-    font-size: 16px;
-    
+    text-align: center;
 }
+
 main {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-column-start: 2000px;
+    grid-template-columns: 3fr 1fr;
 }
+
 .display {
     background-color: rgb(225, 226, 226);
-    padding: 25px;
     border: 1px solid rgb(11, 175, 204);
     text-align: center;
-    width: 600px;
-    margin-left: 50px;
+    padding: 35px;
+    /* margin-left: 200px;
+    width: 600px; */
 }
-.history { 
-    text-align: center;
-}
-    
 
-p {
-    text-indent: 100px;
+.history {
+    /* background-color: rgb(141, 22, 22); */
+    background-color: white;
+    /* border: 2px rgb(53, 13, 199); */
+    border: 2px white;
+    /* padding-left: 2px; */
+    /* margin-right: auto;
+    margin-left: auto; */
+    padding-left: 10px;
+    /* text-align: center; */
 }
+
+p .indent{
+    text-indent: 60px;
+}
+.forecast {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    padding: 40px;
+    /* margin-left: auto;
+    margin-right: auto;
+    width: 1000px; */
+    /* background-color: rgb(141, 22, 22);  */
+}
+
