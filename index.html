@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
     <link rel="stylesheet" href="./weather.css" />
+    <!-- <script src="seasons.js"></script> -->
     <script defer src="weather.js"></script>
   </head>
-
   <body>
     <header>
       <h1>Weather App</h1>
@@ -20,27 +20,22 @@
     </header>
     <br />
     <main>
-      <article class="display">
-        <div class="results">Choose a location to view the weather</div>
-      </article>
+      <section class="display">Choose a location to view the weather</section>
       <aside class="history">
-        <h3>Previous Searches:</h3>
-        <p>no previous searches</p>
-        <ul></ul>
-      </aside>
-
-      <section class="forecast">
-        <article id="current">
-          
-        </article>
-        <article id="tomorrow">
-          
-        </article>
-        <article id="future">
-          
-        </article>
-      </section>
-
+          <div class="search">
+          <h3>Previous Searches:</h3>
+          <ul>
+            <li>No previous search</li>  
+          </ul>
+          </div>
+        </aside>
     </main>
+    <section class="forecast">
+        <div class="current"></div>
+        
+        <div class="tomorrow"></div>
+        
+        <div class="future"></div>
+      </section>
   </body>
 </html>
