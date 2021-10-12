@@ -1,0 +1,66 @@
+#main {
+  display: grid;
+  grid-template-areas: 
+  "header header header header"
+  "display display display history"
+  "days days days .";
+  width: 80%;
+  grid-gap: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#header {
+  grid-area: header;
+  display: grid;
+  grid-template-areas: 
+  "h1"
+  "error"
+  "search";
+  background-color: cadetblue;
+  border: 2px solid black;
+  text-align: center;
+  padding: 35px;
+}
+#error {
+  grid-area: error;
+  color: red;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#header h1 {
+  grid-area: h1;
+}
+#weather-search {
+  grid-area: search;
+}
+#display-content {
+  grid-area: display;
+  background-color: lightgrey;
+  border: 1px solid cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+}
+#history-content {
+  grid-area: history;
+}
+#three-days {
+  grid-area: days;
+  display: grid;
+  grid-template-areas: 
+  'today tomorrow after-tomorrow';
+}
+#today {
+  grid-area: today;
+  text-align: center;
+}
+#tomorrow {
+  grid-area: tomorrow;
+  text-align: center;
+}
+#after-tomorrow {
+  grid-area: after-tomorrow;
+  text-align: center;
+}
