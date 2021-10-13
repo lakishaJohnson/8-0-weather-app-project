@@ -12,8 +12,11 @@ function fetchByCity(cityName) {
             results.innerHTML = 
             `<h2>${cityName}</h2>
             <div><strong>Area:</strong> ${data.nearest_area[0].areaName[0].value}</div>
+            <br/>
             <div><strong>Region:</strong> ${data.nearest_area[0].region[0].value}</div>
+            <br/>
             <div><strong>Country:</strong> ${data.nearest_area[0].country[0].value}</div>
+            <br/>
             <div><strong>Currently:</strong> Feels Like ${data.current_condition[0].FeelsLikeF} &deg;F</div>`
             
             let threeDay = document.querySelector('#three-days');
